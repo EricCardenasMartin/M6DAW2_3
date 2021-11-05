@@ -1,18 +1,4 @@
-var diasSemana = ["lunes","martes","miercoles","jueves","viernes"];
-var horasDia = [5];
+var fechaInput = new Date(prompt(`Por favor introduce una fecha en formato dd/mm/aaaa`));
 
-for(var dia in diasSemana)
-	horasDia[dia] = prompt(`Cuantas horas de M6 tienes el ${diasSemana[dia]}`);
-
-window.onload = () => {
-	let tbody = document.getElementById("tBody");
-	let total = document.getElementById("total");
-	let totalHoras = 0;
-
-	for(var dia in diasSemana){
-		tbody.innerHTML += `<td>${diasSemana[dia]}:</td><td>${horasDia[dia]} horas.</td>`;
-		totalHoras += parseInt(horasDia[dia]);
-	}
-
-	total.innerHTML = `${totalHoras} horas a la semana`;
-}
+document.write(`Formato estandar: ${fechaInput.toLocaleDateString()} `);
+document.write(`Formato estandar: ${fechaInput.toLocaleDateString()} `);
