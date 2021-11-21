@@ -1,0 +1,1 @@
+document.write(`<p class="paco">usuario: ${document.cookie.split('username=')[1].split(';')[0]}</p>`); // Enseño el nombre, recortando el string de cookies entre [username=] y [;] dando como resultado su valor. [usename=]paco[;] || La clase es para que el texto este a la derecha.
